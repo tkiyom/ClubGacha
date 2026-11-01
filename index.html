@@ -15,12 +15,13 @@
     <h2>結果<br><strong id="rr"></strong></h2>
 </div>
 <script>
-const btn=document.getElementById("aa");
-const str=document.getElementById("rr");
-const member=["a","b","c"];
-btn.addEventListener("click",()=>{
-    var r=member[Math.floor(Math.random() * member.length)];
-    str.innerText(r);
+const btn = document.getElementById("aa");
+const str = document.getElementById("rr");
+const member = ["a", "b", "c"];
+
+btn.addEventListener("click", () => {
+    const r = member[Math.floor(Math.random() * member.length)];
+    str.innerText = r;
 });
 </script>
 </body>
