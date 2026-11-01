@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>ぶちょーガチャ</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<h1>ぶちょーガチャ</h1>
+<button id="aa">
+    <div id="ab">
+        <h2>スタート</h2>
+    </div>
+</button>
+<div id="res">
+    <h2>結果<br><strong id="rr"></strong></h2>
+</div>
+<script>
+const btn=document.getElementById("aa");
+const str=document.getElementById("rr");
+const member=["a","b","c"];
+btn.addEventListener("click",()=>{
+    var r=menber[Math.floor(Math.random() * menber.length)];
+    str.innerText(r);
+});
+</script>
+</body>
+</html>
